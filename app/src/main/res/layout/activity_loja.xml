@@ -319,9 +319,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
-        <ImageView
+        <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
             android:layout_weight="1"
             android:src="@drawable/ic_home"
             app:tint="@android:color/black"/>
@@ -330,7 +331,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1">
-            <ImageView
+            <ImageButton
                 android:layout_width="48dp"
                 android:layout_height="48dp"
                 android:layout_gravity="center"
@@ -340,18 +341,20 @@
                 app:tint="@android:color/white" />
         </FrameLayout>
 
-        <ImageView
+        <ImageButton
             android:layout_width="0dp"
+            android:backgroundTint="@color/white"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/ic_shopping_basket"
             app:tint="@android:color/black"/>
 
-        <ImageView
+        <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:src="@drawable/ic_person"
+            android:backgroundTint="@color/white"
             app:tint="@android:color/black"/>
     </LinearLayout>
 
