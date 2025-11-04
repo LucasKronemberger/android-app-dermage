@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rotina">
+
+    <ImageView
+        android:id="@+id/ondalaranja"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/onda_laranjatopo"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/ondalaranja"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dermagelogotype" />
+
+    <ImageView
+        android:id="@+id/progressBar"
+        android:layout_width="363dp"
+        android:layout_height="6dp"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="252dp"
+        android:scaleType="fitXY"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/progressbar" />
+
+    <ImageView
+        android:id="@+id/barraProgress0"
+        android:layout_width="0dp"
+        android:layout_height="6dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/barraprogresso"
+        app:layout_constraintTop_toTopOf="@id/progressBar"
+        app:layout_constraintBottom_toBottomOf="@id/progressBar"
+        app:layout_constraintStart_toStartOf="@id/progressBar"
+        app:layout_constraintEnd_toStartOf="@id/progressBar"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="180dp"/>
+
+
+
+    <TextView
+        android:id="@+id/tvqualrotina"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="284dp"
+        android:gravity="center"
+        android:text="Qual sua atual rotina de Skincare?"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:fontFamily="@font/playfairbold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvsbtpreocu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="320dp"
+        android:gravity="center"
+        android:text="Nos conte como você cuida da sua pele atualmente"
+        android:textColor="#7A7A7A"
+        android:textSize="13sp"
+        android:fontFamily="@font/playfair"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:id="@+id/opcoesPreocupacoes"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvsbtpreocu">
+
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnProxima2"
+        android:layout_width="363dp"
+        android:layout_height="48dp"
+        android:layout_marginHorizontal="24dp"
+        android:text="Próxima"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        app:backgroundTint="#F39A08"
+        app:cornerRadius="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.395"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.896" />
+
+    <ImageButton
+        android:id="@+id/setaBack"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.026"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.3"
+        app:srcCompat="@drawable/setaback" />
+
+    <TextView
+        android:id="@+id/contador4de6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4 de 6"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.968"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.304" />
+
+    <ImageView
+        android:id="@+id/barraProgress2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/ondalaranja"
+        app:srcCompat="@drawable/barraprogresso" />
+
+    <ImageView
+        android:id="@+id/barraProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="0.167"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/ondalaranja"
+        app:srcCompat="@drawable/barraprogresso" />
+
+    <ImageView
+        android:id="@+id/barraProgress3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/ondalaranja"
+        app:srcCompat="@drawable/barraprogresso" />
+
+    <ImageView
+        android:id="@+id/barraProgress4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        app:layout_constraintEnd_toEndOf="@+id/progressBar"
+        app:layout_constraintHorizontal_bias="0.576"
+        app:layout_constraintStart_toStartOf="@+id/progressBar"
+        app:layout_constraintTop_toBottomOf="@+id/ondalaranja"
+        app:srcCompat="@drawable/barraprogresso" />
+
+    <CheckBox
+        android:id="@+id/cb_moderada"
+        style="@style/OptionCard"
+        android:layout_width="351dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="272dp"
+        android:text="Moderada"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ondalaranja" />
+
+    <CheckBox
+        android:id="@+id/cb_basica"
+        style="@style/OptionCard.Small"
+        android:layout_width="351dp"
+        android:layout_height="52dp"
+        android:text="Básica"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cb_ntrotina" />
+
+    <CheckBox
+        android:id="@+id/cb_ntrotina"
+        style="@style/OptionCard"
+        android:layout_width="351dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="152dp"
+        android:text="Não tenho rotina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ondalaranja" />
+
+    <CheckBox
+        android:id="@+id/completa"
+        style="@style/OptionCard"
+        android:layout_width="351dp"
+        android:layout_height="52dp"
+        android:text="Completa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ondalaranja"
+        app:layout_constraintVertical_bias="0.688" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
